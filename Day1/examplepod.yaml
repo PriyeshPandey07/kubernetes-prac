@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: priyeshpod1
+  labels:
+    name: priyeshpod1
+    app: priyeshapp
+spec:
+  containers:
+  - name: priyeshpod1
+    image: nginx
+    resources:
+      limits:
+        memory: "128Mi"
+        cpu: "500m"
+    ports:
+      - containerPort: 80
