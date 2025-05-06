@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name:  days
+  labels:
+    app: node
+    os: ubuntu
+    client: cano 
